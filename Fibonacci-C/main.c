@@ -16,11 +16,13 @@
  *      3. Funktion fuer Ueberpruefung der Eingabe
  *      5. Funktion fuer Ausgabe der Fibonacci-Folge
  * 
- * Created on 02. October, 11:21
+ * Created on 09. October, 11:21
  */
 
 #include <stdio.h>
 #include <stdlib.h>
+
+#define FibType int
 
 /*
  * 
