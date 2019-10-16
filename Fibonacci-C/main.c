@@ -81,6 +81,7 @@ int showFib(void) {
             default: fib = bar + foo; bar = foo; foo = fib; break;
         }
         
+        // f(i-1) <= LIMIT - f(i-2)
         if(fib <= MaxRange-bar) {
             printf("\n%lld", fib);
         } else {
