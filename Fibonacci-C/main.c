@@ -40,11 +40,14 @@ int n;
 // Forward Declarations
 int inputNumber(void);
 int showFib(void);
+int arrayFib(int arrayMax);
 
 /*
  * Programm starten
  */
 int main(int argc, char** argv) {
+    
+    arrayFib(10);
 
     printf("n: %i\n",inputNumber());
     n += 1;
@@ -89,4 +92,19 @@ int showFib(void) {
             break;
         }
     }
+}
+
+int arrayFib(int arrayMax) {
+    int last;
+    int fibo[arrayMax];
+    fibo[0] = 0;
+    fibo[1] = 1;
+    
+    for(int i=2; i <= arrayMax; i++) {
+        fibo[i] = fibo[i-2] + fibo[i-1];
+        last = fibo[i];
+    }
+    
+    printf("Letzte Fib: %i\n", last);
+    return last;
 }
