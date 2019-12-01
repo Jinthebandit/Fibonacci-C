@@ -94,6 +94,7 @@ int showFib(void) {
     }
 }
 
+// Fibonacci mithilfe von Array berechnen und abspeichern
 int arrayFib(int arrayMax) {
     int last;
     int fibo[arrayMax];
